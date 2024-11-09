@@ -1,0 +1,4940 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://www.guvi.in/code-kata/ -->
+<html lang="en" class="wf-roboto-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CodeKata | GUVI</title>
+        <meta name="title" content="CodeKata | GUVI">
+        <meta name="description" content="Practice to write code on CodeKata that offers 1500+ Coding Exercises &amp; coding problem statements asked by Top Companies like Amazon, Walmart, JusPay &amp; more.">
+        <link rel="canonical" href="https://www.guvi.in/code-kata/">
+        <!-- Google fonts -->
+        <!-- <link rel='icon' href='images/favicon.ico' type='image/x-icon' /> -->
+        <link rel="icon" href="https://www.guvi.in/images/guvi-icon.png" type="image/x-icon">
+        <link href="./CodeKata _ GUVI_files/icon" rel="stylesheet">
+        <link href="./CodeKata _ GUVI_files/css" rel="stylesheet">
+        <link href="./CodeKata _ GUVI_files/4.css" rel="stylesheet">
+        <link href="./CodeKata _ GUVI_files/stylev2.css" rel="stylesheet">
+        <link href="./CodeKata _ GUVI_files/guviv2.css" rel="stylesheet">
+        <script async="true" src="./CodeKata _ GUVI_files/a930b123-86c9-4e18-bc14-010a433bb0cc.js.download" crossorigin="anonymous"></script><script async="" src="./CodeKata _ GUVI_files/scevent.min.js.download"></script><script type="text/javascript" async="" src="./CodeKata _ GUVI_files/main.min.js.download"></script><script async="" src="./CodeKata _ GUVI_files/clarity.js.download"></script><script async="" src="./CodeKata _ GUVI_files/97009190"></script><script async="" src="./CodeKata _ GUVI_files/ADGMOT35CHFLVDHBJNIG50K968G3K6O6OSE83QNSKRP0KT3F0H1G.js.download"></script><script async="" src="./CodeKata _ GUVI_files/hansel.min.js.download"></script><script type="text/javascript" src="./CodeKata _ GUVI_files/eid.es5.js.download" charset="UTF-8" async="async"></script><script type="text/javascript" src="./CodeKata _ GUVI_files/cds-pips.js.download" charset="UTF-8" async="async"></script><script type="text/javascript" async="" src="./CodeKata _ GUVI_files/js"></script><script src="./CodeKata _ GUVI_files/bat.js.download" async=""></script><script type="text/javascript" async="" src="./CodeKata _ GUVI_files/mixpanel-2-latest.min.js.download"></script><script async="" src="./CodeKata _ GUVI_files/tfa.js.download" id="tb_tfa_script"></script><script async="" src="./CodeKata _ GUVI_files/3xzystyuwx"></script><script async="" src="./CodeKata _ GUVI_files/qevents.js.download"></script><script type="text/javascript" async="" src="./CodeKata _ GUVI_files/insight.min.js.download"></script><script src="./CodeKata _ GUVI_files/2421896964801907" async=""></script><script async="" src="./CodeKata _ GUVI_files/fbevents.js.download"></script><script async="" src="./CodeKata _ GUVI_files/moe_webSdk.min.latest.js.download"></script><script async="" src="./CodeKata _ GUVI_files/tapfiliate.js.download" charset="UTF-8"></script><script async="" src="./CodeKata _ GUVI_files/analytics.js.download"></script><script async="" src="./CodeKata _ GUVI_files/gtm.js.download"></script><script type="text/javascript" src="./CodeKata _ GUVI_files/dependency.js.download"></script>
+        <script type="text/javascript" src="./CodeKata _ GUVI_files/sidebar.js.download"></script>
+    <script type="text/javascript"> window.ymConfig = { "bot": "x1634630290610", "host": "https://r3.cloud.yellow.ai" }; (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();</script><script type="text/javascript" async="" src="./CodeKata _ GUVI_files/f.txt"></script><script type="text/javascript" src="./CodeKata _ GUVI_files/wt"></script><script async="" id="smartech_v4" src="./CodeKata _ GUVI_files/smartech-sdk.js.download"></script><script src="./CodeKata _ GUVI_files/97009190.js.download" type="text/javascript" async="" data-ueto="ueto_de12782096"></script><link rel="stylesheet" type="text/css" href="./CodeKata _ GUVI_files/hansel.min.css" media="all"><link rel="manifest" href="https://wdc.netcoresmartech.com/manifest.json"><style>:root {
+  --closeImage: '';
+  --primaryColor: '';
+  --primaryTextColor: '';
+  --fontFamily: '';
+  --charcoalGrey: #384248;
+  --chatAutoPopUpBackgroundColor: #ffffff;
+  --chatAutoPopUpDescriptionColor: #60686d;
+  --chatAutoPopUpNotificationButtonColor: #747b7f;
+  --highlightedMarkdownBackground: '';
+  --highlightedMarkdownText: '';
+}
+
+.ymHide {
+  display: none;
+}
+#ymFrameHolder {
+  display: none;
+  right: 20px;
+  bottom: 95px;
+  position: fixed;
+  width: 387px;
+  min-width: 320px;
+  border-radius: 16px;
+  z-index: 99999;
+  background: transparent;
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  line-height: 0.5;
+}
+
+#ymFrameHolder.transparency {
+  margin-bottom: 24px;
+  bottom: 100px !important;
+}
+
+#ymFrameHolder.transparency #ymIframe {
+  max-height: 431px;
+}
+
+#ymFramebranding {
+  float: right;
+  margin: -4px 22px;
+  position: fixed;
+  bottom: 11px;
+  right: 0;
+}
+
+#ymIframe {
+  background: none !important; /* we do not want other iframe backgrounds to affect our ymIframe */
+  border: none;
+  width: 100%;
+  height: calc(100vh - 75px);
+  max-height: 795px;
+  border-radius: 16px;
+}
+
+#ym-auto-pop-up-container {
+  overflow: unset !important;
+  height: auto !important;
+  opacity: unset !important;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+}
+#ym-auto-pop-up-notification {
+  font-family: var(--fontFamily);
+  background: var(--chatAutoPopUpBackgroundColor);
+  border-radius: 1rem;
+  padding: 0.75rem;
+  max-width: 264px;
+  z-index: 999999;
+  box-shadow:
+    0px 6px 25px rgba(0, 0, 0, 0.08),
+    0px 0px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#ym-auto-pop-up-header {
+  font-size: 12px;
+  line-height: 18px;
+  line-height: 1.125rem;
+  color: var(--charcoalGrey);
+}
+#ym-auto-pop-up-content {
+  display: flex;
+}
+#ym-auto-pop-up-notification-button {
+  color: var(--chatAutoPopUpNotificationButtonColor);
+  margin-right: 0.5rem;
+  padding: 1px 0;
+  border: none;
+  appearance: none;
+  background: none;
+}
+#ym-auto-pop-up-description {
+  padding-top: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.5px;
+  line-height: 18px;
+  color: var(--chatAutoPopUpDescriptionColor);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.highlighed-markdown {
+  background: var(--highlightedMarkdownBackground);
+  color: var(--highlightedMarkdownText);
+}
+.dark .highlighed-markdown {
+  background: var(--highlightedMarkdownBackground);
+  color: var(--highlightedMarkdownText);
+}
+
+#ym-auto-pop-up-close-button {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 999999;
+  color: var(--charcoalGrey);
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center !important;
+  border-radius: 1rem;
+  background: var(--chatAutoPopUpBackgroundColor);
+  border: none;
+  box-shadow:
+    0px 6px 25px rgba(0, 0, 0, 0.08),
+    0px 0px 2px rgba(0, 0, 0, 0.5);
+  padding: 3px;
+}
+
+#ymDivBar {
+  width: 289px;
+  border-radius: 16px;
+  height: 56px;
+  padding: 9px 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
+  font-size: 15px;
+  background-size: 30px;
+  color: #ffffff;
+  background: var(--primaryColor);
+  z-index: 999999;
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
+  -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
+  line-height: 0.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--fontFamily);
+  cursor: pointer;
+  border: none;
+  appearance: none;
+}
+
+#ymDivBar img:hover {
+  filter: brightness(96%);
+}
+
+#ymDivBar .ym-title-parent {
+  overflow: hidden;
+}
+
+#ymDivBar .ym-title {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 2px;
+}
+
+#ymDivBar .ym-bell {
+  position: absolute;
+  right: 5px;
+  padding: 8px;
+  background: #f2300d;
+  border-radius: 50%;
+  top: 0;
+  transform: translate(0, -50%);
+}
+
+#ymDivBar .ym-online-box {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  background-color: #48a636;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+#ymDivBar #ym-agent-notification-box {
+  position: absolute;
+  background-color: #f2300d;
+  width: fit-content;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 99999999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  right: -3px;
+  top: -3px;
+  border: 2px solid white;
+}
+
+#ym-agent-notification-box > span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+
+#ymDivBar .ym-title-parent .ym-sub-title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--primaryTextColor);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+#ymDivBar .ym-icon-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+#ymDivBar img.ym-icon {
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  margin: auto 16px auto 0px;
+  object-fit: cover;
+  float: left;
+}
+
+#ymDivBar img.secondary {
+  width: auto !important;
+  height: 60px !important;
+  border-radius: 0 !important;
+  top: 10px;
+  right: 0;
+  position: absolute;
+}
+
+#ymDivBar img.secondary.top-30 {
+  top: 30px;
+}
+
+#ymDivBar.full img.secondary {
+  display: inline-block !important;
+}
+
+#ymDivBar .actions {
+  display: none;
+  padding: 10px;
+  margin: 10px 20px 0;
+  text-align: center;
+}
+
+#ymDivBar.full .actions {
+  display: block;
+}
+
+#ymDivBar .back {
+  display: none;
+  position: relative;
+}
+
+#ymDivBar .close-button {
+  display: none;
+}
+
+#ymDivBar.full img.secondary {
+  height: 50px !important;
+}
+
+#ymDivBar.view-compact-padding {
+  padding: 30px 20px;
+}
+#ymDivBar .close-button img.small-icon {
+  height: 15px;
+  width: 15px;
+  padding: 2px 10px 5px 10px;
+}
+
+#ymDivBar .status-dot {
+  position: absolute;
+  left: 44px;
+  top: 42px;
+  font-size: 10px;
+}
+#ymDivBar .online-dot {
+  color: #1fdb1f;
+}
+#ymDivBar .offline-dot {
+  color: #db2c34;
+}
+
+#ymDivBar .status-dot.hide {
+  display: none;
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-width: 768px) {
+  #ymDivBar {
+    display: none;
+    padding: 0;
+    z-index: 99999;
+    width: 60px;
+    height: 60px;
+    background: #4384f5;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow:
+      0px 6px 25px rgb(0 0 0 / 8%),
+      0px 0px 2px rgb(0 0 0 / 50%) !important;
+    -moz-box-shadow:
+      0px 6px 25px rgb(0 0 0 / 8%),
+      0px 0px 2px rgb(0 0 0 / 50%) !important;
+    box-shadow:
+      0px 6px 25px rgb(0 0 0 / 8%),
+      0px 0px 2px rgb(0 0 0 / 50%) !important;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-image: url('https://cdn.yellowmessenger.com/T30Ya9q28aXo1568730999153.svg');
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 300ms ease-in-out;
+    -moz-transition: background-image 300ms ease-in-out;
+    -o-transition: background-image 300ms ease-in-out;
+    transition: background-image 300ms ease-in-out;
+  }
+
+  #ymDivBar .ym-title-parent .ym-sub-title {
+    display: none;
+  }
+
+  #ymDivBar .ym-title-parent {
+    display: none;
+  }
+
+  #ymDivBar img.ym-icon {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    object-fit: cover;
+    float: left;
+  }
+
+  #ymFrameHolder {
+    width: auto;
+    right: 0 !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 100% !important;
+    position: fixed;
+  }
+
+  #ymFrameHolder.left {
+    /*right: auto !important;*/
+    left: 0 !important;
+  }
+
+  #ymIframe {
+    border: none !important;
+    min-height: calc(100vh - 120px) !important;
+    bottom: 0 !important;
+    z-index: 999999999;
+    overflow: hidden;
+    height: 100% !important;
+    width: 100vw !important;
+    margin-top: 0 !important;
+    border-radius: 0px;
+    max-height: 100%;
+  }
+}
+
+#ymDivCircle.open {
+  background-image: url('https://cdn.yellowmessenger.com/files/images/close.png') !important;
+  background-image: var(--closeImage) !important;
+  -webkit-transition: background-image 300ms ease-in-out;
+  -moz-transition: background-image 300ms ease-in-out;
+  -o-transition: background-image 300ms ease-in-out;
+  transition: background-image 300ms ease-in-out;
+}
+
+#ymDivCircle {
+  display: none;
+  z-index: 99999;
+  width: 60px;
+  height: 60px;
+  background: var(--primaryColor);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.5) !important;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-image: url('https://cdn.yellowmessenger.com/T30Ya9q28aXo1568730999153.svg');
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 300ms ease-in-out;
+  -moz-transition: background-image 300ms ease-in-out;
+  -o-transition: background-image 300ms ease-in-out;
+  transition: background-image 300ms ease-in-out;
+}
+
+#ymDivCircle.left {
+  right: auto;
+  left: 20px;
+}
+
+#ymDivBar.left {
+  right: auto;
+  left: 20px;
+}
+
+#ymFrameHolder.left {
+  right: auto;
+  left: 20px;
+}
+
+#ymDivCircle img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primaryColor);
+  padding: 0;
+}
+
+#ymDivCircle img:hover {
+  filter: brightness(96%);
+}
+
+#ymDivCircle.open img {
+  display: none;
+}
+
+#ymDivCircle.square {
+  border-radius: 15%;
+}
+
+.removeBackground {
+  background: none !important;
+}
+
+#ymDivCircle.noneDisplay {
+  display: none;
+}
+
+#ymDivCircle.removeBoxShadow {
+  box-shadow: none !important;
+}
+
+#ymDivCircle.square img {
+  border-radius: 15%;
+}
+
+.fileviewer-div-overlay {
+  background: #4a4a4a99;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  z-index: 1000000;
+  position: absolute;
+}
+
+.fileviewer-div {
+  width: 750px;
+  bottom: 34px;
+  height: calc(100vh - 120px);
+  padding-right: 5px;
+  max-height: 795px;
+  box-shadow: rgb(0 0 0 / 16%) -4px 0px 7px 0px;
+  border-radius: 10px 0 0 10px;
+  z-index: 99998;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: auto;
+}
+
+.fileviewer-div-pwa {
+  position: fixed;
+  width: 50%;
+  height: 70%;
+  box-shadow: rgb(0 0 0 / 16%) -4px 0px 7px 0px;
+  border-radius: 10px;
+  z-index: 100000;
+  display: flex;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  margin: auto;
+  background: white;
+}
+
+.fileviewer-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-bottom: solid 1px #d4d4d4;
+}
+
+.fileviewer-content {
+  height: 300px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.fileviewer-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+  background: #eaf5fb;
+}
+
+.fileviewer-title {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fileviewer-body i {
+  color: #0380ff;
+  background: white;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  margin: 4px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #dedede;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px 0px #2323239c;
+}
+
+.fileviewer-close {
+  color: #d45454;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fileviewer-docname {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  font-weight: bold;
+}
+
+.fileviewer-feedback {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90px;
+}
+
+.fileviewer-feedback .thumbs {
+  height: 26px;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.closefileviewer {
+  height: 16px;
+  width: 16px;
+  display: flex;
+  background-size: cover;
+}
+
+@media screen and (max-device-width: 768px) {
+  .fileviewer-div {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    padding-right: 0px;
+    height: 100%;
+    min-height: 100%;
+    box-shadow: rgb(0 0 0 / 16%) -4px 0px 7px 0px;
+    border-radius: 4px;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  .fileviewer-footer {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* --------------------------------
+
+xnugget info
+
+-------------------------------- */
+
+/* --------------------------------
+
+Main Components
+
+-------------------------------- */
+
+#ymDivBar,
+#ymDivBar::before,
+#ymDivBar::after {
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+}
+
+.ym-close,
+.ym-close::before,
+.ym-close::after {
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+}
+
+.ym-zoom,
+.ym-zoom::before,
+.ym-zoom::after {
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+}
+
+#ymImageHolder {
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ym-img-holder .img-popup {
+  width: 100%;
+  height: calc(100% - 100px);
+  transform: scale(0);
+  overflow: scroll;
+}
+
+.ym-img-holder .ym-close {
+  display: flex;
+  height: 40px;
+  padding: 4px 5px;
+  justify-content: flex-end;
+  background: var(--themeColor);
+  cursor: pointer;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.ym-img {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .ym-img {
+    width: 90%;
+    height: 70%;
+  }
+}
+
+.ym-img-holder .ym-zoom {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  font-size: 25px;
+  bottom: 0;
+  height: 56px;
+  width: 100%;
+  background: var(--themeColor);
+  cursor: pointer;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #c4c4c4;
+}
+
+.ym-zoom-out,
+.ym-zoom-in,
+.ym-zoom-download {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background: none;
+}
+.ym-zoom-download.hide {
+  display: none;
+}
+.ym-zoom-line {
+  color: var(--themeTextColor);
+  border-left: 2px solid;
+  opacity: 0.4;
+  height: 24px;
+}
+.ym-zoom-out,
+.ym-close,
+.ym-zoom-in > svg {
+  fill: var(--themeTextColor);
+}
+
+.ym-zoom-download > svg {
+  fill: var(--themeTextColor);
+}
+
+.ym-img-holder .img-popup.show {
+  transform: scale(1);
+  background: var(--themeColor);
+}
+
+.ym-img-holder .img-popup.show .holder {
+  width: 100%;
+  height: 100%;
+}
+#ymImageHolderPopup {
+  /* fireFox*/
+  scrollbar-color: var(--scrollbarColor) var(--themeColor);
+  scrollbar-width: thin;
+}
+
+#ymImageHolderPopup::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+#ymImageHolderPopup::-webkit-scrollbar-track {
+  background: var(--themeColor) !important;
+}
+#ymImageHolderPopup::-webkit-scrollbar-thumb {
+  background: var(--scrollbarColor) !important;
+  border-radius: 4px;
+}
+#ymImageHolderPopup::-webkit-scrollbar-corner {
+  background: var(--themeColor) !important;
+}
+
+.ym-img-holder .img-popup .holder img {
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#ymFrameHolder.compact {
+  bottom: 34px !important;
+}
+
+#ymIrameId.compact {
+  border: none !important;
+  width: 100% !important;
+  min-height: 500px !important;
+}
+
+.ym-loading-spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.ym-double-bounce1,
+.ym-double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.ym-double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+#ymDivBar #ym-agent-notification-box {
+  position: absolute;
+  background-color: #f2300d;
+  width: fit-content;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 99999999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  right: -3px;
+  top: -3px;
+  border: 2px solid #ffffff;
+}
+#ym-agent-notification-box > span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  #ymFramebranding {
+    display: none;
+  }
+  #ymIframe {
+    max-height: 100%;
+  }
+}
+</style><link rel="stylesheet" href="./CodeKata _ GUVI_files/roboto.min.css" media="all"><style>@charset "UTF-8";
+
+/*!
+ * animate.css -https://daneden.github.io/animate.css/
+ * Version - 3.7.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2019 Daniel Eden
+ */
+
+@-webkit-keyframes ym_bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes ym_bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.ym_bounce {
+  -webkit-animation-name: ym_bounce;
+  animation-name: ym_bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+@-webkit-keyframes ym_flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes ym_flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.ym_flash {
+  -webkit-animation-name: ym_flash;
+  animation-name: ym_flash;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes ym_pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes ym_pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.ym_pulse {
+  -webkit-animation-name: ym_pulse;
+  animation-name: ym_pulse;
+}
+
+@-webkit-keyframes ym_rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes ym_rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.ym_rubberBand {
+  -webkit-animation-name: ym_rubberBand;
+  animation-name: ym_rubberBand;
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+@-webkit-keyframes ym_headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes ym_headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.ym_headShake {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: ym_headShake;
+  animation-name: ym_headShake;
+}
+
+@-webkit-keyframes ym_swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes ym_swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.ym_swing {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: ym_swing;
+  animation-name: ym_swing;
+}
+
+@-webkit-keyframes ym_tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes ym_tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.ym_tada {
+  -webkit-animation-name: ym_tada;
+  animation-name: ym_tada;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes ym_wobble {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_wobble {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_wobble {
+  -webkit-animation-name: ym_wobble;
+  animation-name: ym_wobble;
+}
+
+@-webkit-keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.jello {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+@-webkit-keyframes ym_heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes ym_heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ym_heartBeat {
+  -webkit-animation-name: ym_heartBeat;
+  animation-name: ym_heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes ym_bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes ym_bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.ym_bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: ym_bounceIn;
+  animation-name: ym_bounceIn;
+}
+
+@-webkit-keyframes ym_bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_bounceInDown {
+  -webkit-animation-name: ym_bounceInDown;
+  animation-name: ym_bounceInDown;
+}
+
+@-webkit-keyframes ym_bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_bounceInLeft {
+  -webkit-animation-name: ym_bounceInLeft;
+  animation-name: ym_bounceInLeft;
+}
+
+@-webkit-keyframes ym_bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_bounceInRight {
+  -webkit-animation-name: ym_bounceInRight;
+  animation-name: ym_bounceInRight;
+}
+
+@-webkit-keyframes ym_bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_bounceInUp {
+  -webkit-animation-name: ym_bounceInUp;
+  animation-name: ym_bounceInUp;
+}
+
+@-webkit-keyframes ym_bounceOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+@keyframes ym_bounceOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+.ym_bounceOut {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: ym_bounceOut;
+  animation-name: ym_bounceOut;
+}
+
+@-webkit-keyframes ym_bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+@keyframes ym_bounceOutDown {
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.ym_bounceOutDown {
+  -webkit-animation-name: ym_bounceOutDown;
+  animation-name: ym_bounceOutDown;
+}
+
+@-webkit-keyframes ym_bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+@keyframes ym_bounceOutLeft {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+.ym_bounceOutLeft {
+  -webkit-animation-name: ym_bounceOutLeft;
+  animation-name: ym_bounceOutLeft;
+}
+
+@-webkit-keyframes ym_bounceOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+@keyframes ym_bounceOutRight {
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+.ym_bounceOutRight {
+  -webkit-animation-name: ym_bounceOutRight;
+  animation-name: ym_bounceOutRight;
+}
+
+@-webkit-keyframes ym_bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+@keyframes ym_bounceOutUp {
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+.ym_bounceOutUp {
+  -webkit-animation-name: ym_bounceOutUp;
+  animation-name: ym_bounceOutUp;
+}
+
+@-webkit-keyframes ym_fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ym_fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ym_fadeIn {
+  -webkit-animation-name: ym_fadeIn;
+  animation-name: ym_fadeIn;
+}
+
+@-webkit-keyframes ym_fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInDown {
+  -webkit-animation-name: ym_fadeInDown;
+  animation-name: ym_fadeInDown;
+}
+
+@-webkit-keyframes ym_fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInDownBig {
+  -webkit-animation-name: ym_fadeInDownBig;
+  animation-name: ym_fadeInDownBig;
+}
+
+@-webkit-keyframes ym_fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInLeft {
+  -webkit-animation-name: ym_fadeInLeft;
+  animation-name: ym_fadeInLeft;
+}
+
+@-webkit-keyframes ym_fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInLeftBig {
+  -webkit-animation-name: ym_fadeInLeftBig;
+  animation-name: ym_fadeInLeftBig;
+}
+
+@-webkit-keyframes ym_fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInRight {
+  -webkit-animation-name: ym_fadeInRight;
+  animation-name: ym_fadeInRight;
+}
+
+@-webkit-keyframes ym_fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInRightBig {
+  -webkit-animation-name: ym_fadeInRightBig;
+  animation-name: ym_fadeInRightBig;
+}
+
+@-webkit-keyframes ym_fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInUp {
+  -webkit-animation-name: ym_fadeInUp;
+  animation-name: ym_fadeInUp;
+}
+
+@-webkit-keyframes ym_fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_fadeInUpBig {
+  -webkit-animation-name: ym_fadeInUpBig;
+  animation-name: ym_fadeInUpBig;
+}
+
+@-webkit-keyframes ym_fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes ym_fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.ym_fadeOut {
+  -webkit-animation-name: ym_fadeOut;
+  animation-name: ym_fadeOut;
+}
+
+@-webkit-keyframes ym_fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes ym_fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.ym_fadeOutDown {
+  -webkit-animation-name: ym_fadeOutDown;
+  animation-name: ym_fadeOutDown;
+}
+
+@-webkit-keyframes ym_fadeOutDownBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+@keyframes ym_fadeOutDownBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.ym_fadeOutDownBig {
+  -webkit-animation-name: ym_fadeOutDownBig;
+  animation-name: ym_fadeOutDownBig;
+}
+
+@-webkit-keyframes ym_fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ym_fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ym_fadeOutLeft {
+  -webkit-animation-name: ym_fadeOutLeft;
+  animation-name: ym_fadeOutLeft;
+}
+
+@-webkit-keyframes ym_fadeOutLeftBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+@keyframes ym_fadeOutLeftBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+.ym_fadeOutLeftBig {
+  -webkit-animation-name: ym_fadeOutLeftBig;
+  animation-name: ym_fadeOutLeftBig;
+}
+
+@-webkit-keyframes ym_fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes ym_fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.ym_fadeOutRight {
+  -webkit-animation-name: ym_fadeOutRight;
+  animation-name: ym_fadeOutRight;
+}
+
+@-webkit-keyframes ym_fadeOutRightBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+@keyframes ym_fadeOutRightBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+.ym_fadeOutRightBig {
+  -webkit-animation-name: ym_fadeOutRightBig;
+  animation-name: ym_fadeOutRightBig;
+}
+
+@-webkit-keyframes ym_fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes ym_fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.ym_fadeOutUp {
+  -webkit-animation-name: ym_fadeOutUp;
+  animation-name: ym_fadeOutUp;
+}
+
+@-webkit-keyframes ym_fadeOutUpBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+@keyframes ym_fadeOutUpBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+.ym_fadeOutUpBig {
+  -webkit-animation-name: ym_fadeOutUpBig;
+  animation-name: ym_fadeOutUpBig;
+}
+
+@-webkit-keyframes ym_flip {
+  from {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes ym_flip {
+  from {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+.ym_animated.ym_flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: ym_flip;
+  animation-name: ym_flip;
+}
+
+@-webkit-keyframes ym_flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes ym_flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.ym_flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: ym_flipInX;
+  animation-name: ym_flipInX;
+}
+
+@-webkit-keyframes ym_flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes ym_flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.ym_flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: ym_flipInY;
+  animation-name: ym_flipInY;
+}
+
+@-webkit-keyframes ym_flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+.ym_flipOutX {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: ym_flipOutX;
+  animation-name: ym_flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+@-webkit-keyframes ym_flipOutY {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_flipOutY {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+.ym_flipOutY {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: ym_flipOutY;
+  animation-name: ym_flipOutY;
+}
+
+@-webkit-keyframes ym_lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_lightSpeedIn {
+  -webkit-animation-name: ym_lightSpeedIn;
+  animation-name: ym_lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes ym_lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.ym_lightSpeedOut {
+  -webkit-animation-name: ym_lightSpeedOut;
+  animation-name: ym_lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes ym_rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes ym_rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.ym_rotateIn {
+  -webkit-animation-name: ym_rotateIn;
+  animation-name: ym_rotateIn;
+}
+
+@-webkit-keyframes ym_rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes ym_rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.ym_rotateInDownLeft {
+  -webkit-animation-name: ym_rotateInDownLeft;
+  animation-name: ym_rotateInDownLeft;
+}
+
+@-webkit-keyframes ym_rotateInDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes ym_rotateInDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.ym_rotateInDownRight {
+  -webkit-animation-name: ym_rotateInDownRight;
+  animation-name: ym_rotateInDownRight;
+}
+
+@-webkit-keyframes ym_rotateInUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes ym_rotateInUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.ym_rotateInUpLeft {
+  -webkit-animation-name: ym_rotateInUpLeft;
+  animation-name: ym_rotateInUpLeft;
+}
+
+@-webkit-keyframes ym_rotateInUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes ym_rotateInUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.ym_rotateInUpRight {
+  -webkit-animation-name: ym_rotateInUpRight;
+  animation-name: ym_rotateInUpRight;
+}
+
+@-webkit-keyframes ym_rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_rotateOut {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+
+.ym_rotateOut {
+  -webkit-animation-name: ym_rotateOut;
+  animation-name: ym_rotateOut;
+}
+
+@-webkit-keyframes ym_rotateOutDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_rotateOutDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+}
+
+.ym_rotateOutDownLeft {
+  -webkit-animation-name: ym_rotateOutDownLeft;
+  animation-name: ym_rotateOutDownLeft;
+}
+
+@-webkit-keyframes ym_rotateOutDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_rotateOutDownRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+.ym_rotateOutDownRight {
+  -webkit-animation-name: ym_rotateOutDownRight;
+  animation-name: ym_rotateOutDownRight;
+}
+
+@-webkit-keyframes ym_rotateOutUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_rotateOutUpLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+.ym_rotateOutUpLeft {
+  -webkit-animation-name: ym_rotateOutUpLeft;
+  animation-name: ym_rotateOutUpLeft;
+}
+
+@-webkit-keyframes ym_rotateOutUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_rotateOutUpRight {
+  from {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
+}
+
+.ym_rotateOutUpRight {
+  -webkit-animation-name: ym_rotateOutUpRight;
+  animation-name: ym_rotateOutUpRight;
+}
+
+@-webkit-keyframes ym_hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%,
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes ym_hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%,
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+.ym_hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: ym_hinge;
+  animation-name: ym_hinge;
+}
+
+@-webkit-keyframes ym_jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes ym_jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ym_jackInTheBox {
+  -webkit-animation-name: ym_jackInTheBox;
+  animation-name: ym_jackInTheBox;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes ym_rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_rollIn {
+  -webkit-animation-name: ym_rollIn;
+  animation-name: ym_rollIn;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes ym_rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+@keyframes ym_rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+.ym_rollOut {
+  -webkit-animation-name: ym_rollOut;
+  animation-name: ym_rollOut;
+}
+
+@-webkit-keyframes ym_zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ym_zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.ym_zoomIn {
+  -webkit-animation-name: ym_zoomIn;
+  animation-name: ym_zoomIn;
+}
+
+@-webkit-keyframes ym_zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes ym_zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.ym_zoomInDown {
+  -webkit-animation-name: ym_zoomInDown;
+  animation-name: ym_zoomInDown;
+}
+
+@-webkit-keyframes ym_zoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes ym_zoomInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.ym_zoomInLeft {
+  -webkit-animation-name: ym_zoomInLeft;
+  animation-name: ym_zoomInLeft;
+}
+
+@-webkit-keyframes ym_zoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes ym_zoomInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.ym_zoomInRight {
+  -webkit-animation-name: ym_zoomInRight;
+  animation-name: ym_zoomInRight;
+}
+
+@-webkit-keyframes ym_zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes ym_zoomInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.ym_zoomInUp {
+  -webkit-animation-name: ym_zoomInUp;
+  animation-name: ym_zoomInUp;
+}
+
+@-webkit-keyframes ym_zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes ym_zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.ym_zoomOut {
+  -webkit-animation-name: ym_zoomOut;
+  animation-name: ym_zoomOut;
+}
+
+@-webkit-keyframes ym_zoomOutDown {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes ym_zoomOutDown {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.ym_zoomOutDown {
+  -webkit-animation-name: ym_zoomOutDown;
+  animation-name: ym_zoomOutDown;
+}
+
+@-webkit-keyframes ym_zoomOutLeft {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
+    transform: scale(0.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+}
+
+@keyframes ym_zoomOutLeft {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
+    transform: scale(0.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+}
+
+.ym_zoomOutLeft {
+  -webkit-animation-name: ym_zoomOutLeft;
+  animation-name: ym_zoomOutLeft;
+}
+
+@-webkit-keyframes ym_zoomOutRight {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+}
+
+@keyframes ym_zoomOutRight {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+}
+
+.ym_zoomOutRight {
+  -webkit-animation-name: ym_zoomOutRight;
+  animation-name: ym_zoomOutRight;
+}
+
+@-webkit-keyframes ym_zoomOutUp {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes ym_zoomOutUp {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.ym_zoomOutUp {
+  -webkit-animation-name: ym_zoomOutUp;
+  animation-name: ym_zoomOutUp;
+}
+
+@-webkit-keyframes ym_slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_slideInDown {
+  -webkit-animation-name: ym_slideInDown;
+  animation-name: ym_slideInDown;
+}
+
+@-webkit-keyframes ym_slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_slideInLeft {
+  -webkit-animation-name: ym_slideInLeft;
+  animation-name: ym_slideInLeft;
+}
+
+@-webkit-keyframes ym_slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_slideInRight {
+  -webkit-animation-name: ym_slideInRight;
+  animation-name: ym_slideInRight;
+}
+
+@-webkit-keyframes ym_slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ym_slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ym_slideInUp {
+  -webkit-animation-name: ym_slideInUp;
+  animation-name: ym_slideInUp;
+}
+
+@-webkit-keyframes ym_slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes ym_slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.ym_slideOutDown {
+  -webkit-animation-name: ym_slideOutDown;
+  animation-name: ym_slideOutDown;
+}
+
+@-webkit-keyframes ym_slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ym_slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ym_slideOutLeft {
+  -webkit-animation-name: ym_slideOutLeft;
+  animation-name: ym_slideOutLeft;
+}
+
+@-webkit-keyframes ym_slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes ym_slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.ym_slideOutRight {
+  -webkit-animation-name: ym_slideOutRight;
+  animation-name: ym_slideOutRight;
+}
+
+@-webkit-keyframes ym_slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes ym_slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.ym_slideOutUp {
+  -webkit-animation-name: ym_slideOutUp;
+  animation-name: ym_slideOutUp;
+}
+
+.ym_animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.ym_animated.ym_infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.ym_animated.ym_five {
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+
+.ym_animated.ym_four {
+  -webkit-animation-iteration-count: 4;
+  animation-iteration-count: 4;
+}
+
+.ym_animated.ym_three {
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+
+.ym_animated.ym_two {
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.ym_animated.ym_delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.ym_animated.ym_delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.ym_animated.ym_delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.ym_animated.ym_delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.ym_animated.ym_delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.ym_animated.ym_fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.ym_animated.ym_faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.ym_animated.ym_slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.ym_animated.ym_slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (print), (prefers-reduced-motion: reduce) {
+  .ym_animated {
+    -webkit-animation-duration: 1ms !important;
+    animation-duration: 1ms !important;
+    -webkit-transition-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style></head>
+
+    <body style="--highlightedMarkdownBackground: #fff6d7; --highlightedMarkdownText: #384248; --primaryColor: #09d15e; --primaryTextColor: #000000; --fontFamily: Roboto, sans-serif;">
+
+        <main role="main" class="container-fluid" id="code-kata-page" pop-data="Codekata">
+
+        <!-- Header  -->
+        <header class="row bg-white">
+            <nav class="col navbar navbar-expand-md navbar-light shadow-sm guvi-navheade-fixed">
+
+                <button id="sidebarToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons">menu</i>
+                </button>
+
+                <!-- <a class="navbar-brand" href="#">
+                    <img src="/images/minified/foot-guvi-logo.png" alt="GUVI : Learn to code in your native language" width="95px"/>
+                </a> -->
+                <a class="navbar-brand" href="https://www.guvi.in/">
+                    <img src="./CodeKata _ GUVI_files/new-guvi-logo.png" class="lazyload" alt="GUVI : Learn to code in your native language" width="95px">
+                </a>
+                <!-- AccountGroup -->
+                <div class="list-group list-group-horizontal-md user-profile" id="accountGroup">
+                    <a class="btn pt-2" href="https://www.guvi.in/faq/"><img src="./CodeKata _ GUVI_files/faq-head-icons.png" class="faq_img"></a>
+                    <!-- <button class="btn dropdown notification-box-toggler " data-toggle="collapse" data-target="#notification-box">
+                        <img src="/images/minified/notifications-icon.png">
+                    </button> -->
+
+                    <button class="btn dropdown account-box-toggler" type="button" data-toggle="collapse" data-target="#account-box" aria-expanded="false" aria-controls="account-box">
+                        <div class="gravatar-wrap"><img src="./CodeKata _ GUVI_files/default.jpg" class="gravatar"></div>
+                    </button>
+
+                    <div class="accordion-group">
+
+                        <!-- NotificationBox -->
+                        <div class="collapse notification-box shadow-sm" id="notification-box" data-parent="#accountGroup">
+                            <div class="card card-body">
+                                <ul class="list-group">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /NotificationBox -->
+
+                        <!-- AccountBox -->
+                        <div class="collapse account-box shadow-sm" id="account-box" data-parent="#accountGroup">
+                            <div class="card card-body">  <div class="row d-flex flex-nowrap align-items-center toggle_box"><div class="col-md-3 ml-2"><img src="./CodeKata _ GUVI_files/default.jpg" width="40" height="40" class="rounded-circle d-flex justify-content-center"></div><div class="d-flex flex-row" id="mainNavDefault" style="line-height: 1em; border-bottom:none; "><p class="experience"><i class="icon-geekoin" aria-hidden="true">Geekoin:</i><span>6305</span></p><p class="rank rank_main_board" style=""><i class="rank_board" aria-hidden="true">Rank:</i><span>13868</span></p></div><div class="col-md-9 pl-2 usr_name"> <h6>Hariharan  </h6> <small class="text-secondary">rhariharan312@gmail.com</small></div></div><hr><div class="row"><a class="dropdown-item text-secondary mt-2" href="https://www.guvi.in/rhariharan31257896">My Profile</a><a class="dropdown-item text-secondary mt-2" href="https://www.guvi.in/change-password/">Change Password</a><a class="dropdown-item text-secondary mt-2" href="javascript:authorize.signout();">Sign out</a></div></div>
+                        </div>
+                        <!-- /AccountBox -->
+
+                    </div>
+
+                </div>
+                <!-- /AccountGroup -->
+
+            </nav>
+            <!-- Sidebar -->
+            <div class="sidebar-container">
+                <div id="sidebar" class="sidebar-sticky sidebar-collapse collapse in shadow-sm">
+                    <ul class="nav flex-column  main-menu"><li class="nav-item jobs-link" id="zen_link"><a class="nav-link" href="https://www.guvi.in/code-kata/#"><i class="material-icons">self_improvement</i><span>Zen</span></a></li>
+                        <!-- <li class="nav-item index-link dashboard-link">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="material-icons">home</i>
+                                <span>Home</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item courses-link">
+                            <!-- <a class="nav-link" href="courses.html"> -->
+                            <a class="nav-link" href="https://www.guvi.in/courses/">
+                                <i class="icons-courses"></i><span>Courses</span>
+                            </a>
+
+                        </li>
+
+                        <hr class="border-sidebar">
+
+                        <li class="nav-item code-kata-link active">
+                            <a class="nav-link" href="https://www.guvi.in/code-kata/">
+                                <i class="icons-code-kata"></i><span>CodeKata</span>
+                            </a>
+                        </li><li class="nav-item webkata-link"><a class="nav-link" href="https://www.guvi.in/webkata/"><i class="icons-Webkata"></i><span>WebKata</span></a></li><li class="nav-item debugging-link"><a style="padding-left:1.2rem" class="nav-link" id="debuggingset" href="https://www.guvi.in/debugging/"><i class="icons-debugging"></i><span>Debugging</span></a></li><li class="nav-item ide-link"><a class="nav-link" href="https://www.guvi.in/ide/"><i class="icons-ide"></i><span>IDE</span></a></li>
+
+                        <!-- <li class="nav-item micro-arc-link">
+                            <a class="nav-link" href="micro-arc.html">
+                                <i class="icons-ide"></i>
+                                <span>IDE</span>
+                            </a>
+                        </li> -->
+                        <!-- <li class="nav-item project-board-link">
+                            <a class="nav-link" href="project-board.html">
+                                <i class="icon-project-board"></i>
+                                <span>Project Board</span>
+                            </a>
+                        </li> -->
+                        <hr class="border-sidebar">
+                        <li class="nav-item leader-board-link">
+                            <!-- <a class="nav-link" href="leader-board.html"> -->
+                            <a class="nav-link" href="https://www.guvi.in/leader-board/">
+                                <i class="icons-Leaderboard"></i>
+                                <span>Leaderboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rewards-link">
+                            <!-- <a class="nav-link" href="rewards.html"> -->
+                            <a class="nav-link" href="https://www.guvi.in/rewards/">
+                                <i class="icons-rewards"></i>
+                                <span>Rewards</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="referral.html"> -->
+                            <a class="nav-link" href="https://www.guvi.in/referral/">
+                                <i class="icons-referral"></i>
+                                <span>Referral</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item jobs-link">
+                            <a class="nav-link" href="jobs.html">
+                                <i class="material-icons">work</i>
+                                <span>Jobs</span>
+                            </a>
+                        </li> -->
+                        <!-- <li class="nav-item jobs-link" id="forum_link">
+                            <a class="nav-link">
+                                <i class="material-icons">forum</i>
+                                <span>Forum <img src="/images/beta.svg"></span>
+                            </a>
+                        </li> -->
+                    <li class="nav-item jobs-link" id="forum_link"><a class="nav-link"><i class="icons-forum"></i><span>Forum</span></a></li></ul>
+
+                    <!-- Code kata menu -->
+                    <ul class="nav flex-column code-kata-menu" id="ckMenuTabs" role="tablist">
+                        <li class="nav-item ck-questions-link">
+                            <a class="nav-link active" id="ck-questions-tab" data-toggle="tab" href="https://www.guvi.in/code-kata/#ck-questions" role="tab" aria-controls="ck-questions" aria-selected="true">
+                                <i class="icon-ck-questions"></i>
+                                <span>Questions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-instructions-link">
+                            <a class="nav-link" id="ck-instructions-tab" data-toggle="tab" href="https://www.guvi.in/code-kata/#ck-instructions" role="tab" aria-controls="ck-instructions" aria-selected="false">
+                                <i class="icon-ck-instructions"></i>
+                                <span>Instructions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-github-link">
+                            <a class="nav-link" id="ck-github-tab" data-toggle="tab" href="https://www.guvi.in/code-kata/#ck-github" role="tab" aria-controls="ck-github" aria-selected="false">
+                                <i class="icon-ck-github"></i>
+                                <span>github</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-peer-submission-link">
+                            <a class="nav-link" id="ck-peer-submission-tab" data-toggle="tab" href="https://www.guvi.in/code-kata/#ck-peer-submission" role="tab" aria-controls="ck-peer-submission" aria-selected="false">
+                                <i class="icon-ck-peer-submission"></i>
+                                <span>Peer submissions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-path-link">
+                            <a class="nav-link" id="ck-path-tab" data-toggle="tab" href="https://www.guvi.in/code-kata/#ck-path" role="tab" aria-controls="ck-path" aria-selected="false">
+                                <i class="icon-ck-path"></i>
+                                <span>Topic path</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /Code kata menu -->
+
+                </div>
+            </div>
+
+            <!-- /Sidebar -->
+        </header>
+        <!-- static height -->
+        <div class="static-height"></div>
+        <!-- /Header  -->
+        <div class="container-fluid">
+            <!-- Body container -->
+            <div class="row">
+                <div class="col-sm-12 offset-md-1 col-md-11 bodyContainer">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-around">
+
+                            <div class="page-header">
+                                <h1><i class="icon-code-kata product-head"></i>CODEKATA</h1>
+                                <!-- <p>Codekata  a series of programs curated by experts from the industry. Practising on Codekata will take your coding skills to next level. We will recommend your profile to recruiting companies based on your performance in codekata.
+                                You can be a better programmer and crack interviews by completing Codekata.</p> -->
+                                <p>CodeKata is a series of programs curated by the veterans in IT &amp; Software industry. It hosts coding problems asked by top MNCs like Microsoft, Walmart, Samsung &amp; so on. Practising on Codekata will take your coding skills to next level. We will recommend your profile to recruiting companies based on your performance in codekata. You can be a better programmer &amp; crack coding interviews upon practising on CodeKata.</p>
+                            </div>
+
+                            <!-- SearchForm -->
+                            <div>
+                                <div class="content-search-form">
+                                    <label for="searchConcepts">Search</label>
+                                    <input type="text" class="form-control form-rounded" id="searchConcepts" aria-describedby="helpId" placeholder="Search concept">
+                                    <button class="btn search-btn"><i class="material-icons">search</i></button>
+                                </div>
+                            </div>
+                            <!-- /SearchForm -->
+
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+
+                            <!-- Milestone -->
+                            <!-- <div class="card stepper-card milestone shadow-sm">
+                                <div class="card-header d-flex">
+                                    <strong class="milestone-header">Milestone </strong>
+                                    <span class="total-gems">Total: 185 <i class="icon-gem" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled stepper">
+                                        <li><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <!-- /Milestone -->
+                        </div>
+                    </div>
+
+                    <div id="ck-concepts-list" class="ck-concepts-list">
+                        <div class="row concepts-list list" id="codekataTags"><div class="col-md-12 col-lg-6 col-xl-4" id="Input/Output"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Input/Output</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>10/10</strong><span>Solved</span></li><li class="list-group-item"><strong>540/540</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 309634</span><a href="https://www.guvi.in/code-kata-main?concept=Input/Output" data-topic="Input/Output" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Input/Output" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="absolute beginner"><div class="card concept-card shadow-sm shadow"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">absolute beginner</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>22/30</strong><span>Solved</span></li><li class="list-group-item"><strong>410/570</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 549720</span><a href="https://www.guvi.in/code-kata-main?concept=absolute%20beginner" data-topic="absolute" beginner="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="absolute beginner" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="array"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">array</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>8/308</strong><span>Solved</span></li><li class="list-group-item"><strong>360/16310</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 727735</span><a href="https://www.guvi.in/code-kata-main?concept=array" data-topic="array" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="array" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="mathematics"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">mathematics</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>14/192</strong><span>Solved</span></li><li class="list-group-item"><strong>460/8810</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 615384</span><a href="https://www.guvi.in/code-kata-main?concept=mathematics" data-topic="mathematics" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="mathematics" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="strings"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">strings</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>3/196</strong><span>Solved</span></li><li class="list-group-item"><strong>140/10040</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 495328</span><a href="https://www.guvi.in/code-kata-main?concept=strings" data-topic="strings" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="strings" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="basics"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">basics</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>30/41</strong><span>Solved</span></li><li class="list-group-item"><strong>1030/1570</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 412762</span><a href="https://www.guvi.in/code-kata-main?concept=basics" data-topic="basics" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="basics" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="companies"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">companies</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>3/99</strong><span>Solved</span></li><li class="list-group-item"><strong>170/6870</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 193274</span><a href="https://www.guvi.in/code-kata-main?concept=companies" data-topic="companies" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="companies" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Looping"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Looping</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>11/14</strong><span>Solved</span></li><li class="list-group-item"><strong>340/500</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 172274</span><a href="https://www.guvi.in/code-kata-main?concept=Looping" data-topic="Looping" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Looping" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="guvi-learning-path"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">guvi-learning-path</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/46</strong><span>Solved</span></li><li class="list-group-item"><strong>0/2490</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 118417</span><a href="https://www.guvi.in/code-kata-main?concept=guvi-learning-path" data-topic="guvi-learning-path" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="guvi-learning-path" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="numbers"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">numbers</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/22</strong><span>Solved</span></li><li class="list-group-item"><strong>0/870</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 106144</span><a href="https://www.guvi.in/code-kata-main?concept=numbers" data-topic="numbers" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="numbers" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="gu 27 3rd semester java programming"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">gu 27 3rd semester java programming</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/60</strong><span>Solved</span></li><li class="list-group-item"><strong>0/2220</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 102366</span><a href="https://www.guvi.in/code-kata-main?concept=gu%2027%203rd%20semester%20java%20programming" data-topic="gu" 27="" 3rd="" semester="" java="" programming="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="gu 27 3rd semester java programming" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Amazon"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Amazon</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/38</strong><span>Solved</span></li><li class="list-group-item"><strong>0/2010</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 98211</span><a href="https://www.guvi.in/code-kata-main?concept=Amazon" data-topic="Amazon" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Amazon" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="sorting"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">sorting</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/38</strong><span>Solved</span></li><li class="list-group-item"><strong>0/2150</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 76765</span><a href="https://www.guvi.in/code-kata-main?concept=sorting" data-topic="sorting" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="sorting" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="patterns"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">patterns</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/61</strong><span>Solved</span></li><li class="list-group-item"><strong>0/2560</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 74351</span><a href="https://www.guvi.in/code-kata-main?concept=patterns" data-topic="patterns" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="patterns" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="gu - functional programming: unit 3"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">gu - functional programming: unit 3</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/20</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1000</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 68216</span><a href="https://www.guvi.in/code-kata-main?concept=gu%20-%20functional%20programming:%20unit%203" data-topic="gu" -="" functional="" programming:="" unit="" 3="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="gu - functional programming: unit 3" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="gu - inheritance and exception handling: unit 2"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">gu - inheritance and exception handling: unit 2</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/19</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1070</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 65087</span><a href="https://www.guvi.in/code-kata-main?concept=gu%20-%20inheritance%20and%20exception%20handling:%20unit%202" data-topic="gu" -="" inheritance="" and="" exception="" handling:="" unit="" 2="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="gu - inheritance and exception handling: unit 2" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Microsoft"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Microsoft</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/22</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1220</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 53822</span><a href="https://www.guvi.in/code-kata-main?concept=Microsoft" data-topic="Microsoft" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Microsoft" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="gu - introduction to oops: unit 1"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">gu - introduction to oops: unit 1</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/15</strong><span>Solved</span></li><li class="list-group-item"><strong>0/770</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 52323</span><a href="https://www.guvi.in/code-kata-main?concept=gu%20-%20introduction%20to%20oops:%20unit%201" data-topic="gu" -="" introduction="" to="" oops:="" unit="" 1="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="gu - introduction to oops: unit 1" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="zen"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">zen</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>40/53</strong><span>Solved</span></li><li class="list-group-item"><strong>1300/1870</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 51949</span><a href="https://www.guvi.in/code-kata-main?concept=zen" data-topic="zen" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="zen" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="searching"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">searching</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/21</strong><span>Solved</span></li><li class="list-group-item"><strong>0/990</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 51066</span><a href="https://www.guvi.in/code-kata-main?concept=searching" data-topic="searching" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="searching" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Samsung"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Samsung</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/18</strong><span>Solved</span></li><li class="list-group-item"><strong>0/920</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 46835</span><a href="https://www.guvi.in/code-kata-main?concept=Samsung" data-topic="Samsung" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Samsung" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="bitwise"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">bitwise</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>10/10</strong><span>Solved</span></li><li class="list-group-item"><strong>430/430</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 45008</span><a href="https://www.guvi.in/code-kata-main?concept=bitwise" data-topic="bitwise" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="bitwise" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="algorithm"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">algorithm</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/16</strong><span>Solved</span></li><li class="list-group-item"><strong>0/940</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 38884</span><a href="https://www.guvi.in/code-kata-main?concept=algorithm" data-topic="algorithm" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="algorithm" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Zoho"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Zoho</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/11</strong><span>Solved</span></li><li class="list-group-item"><strong>0/570</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 38390</span><a href="https://www.guvi.in/code-kata-main?concept=Zoho" data-topic="Zoho" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Zoho" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Accolite"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Accolite</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/12</strong><span>Solved</span></li><li class="list-group-item"><strong>0/570</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 35531</span><a href="https://www.guvi.in/code-kata-main?concept=Accolite" data-topic="Accolite" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Accolite" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="bit manipulation"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">bit manipulation</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>2/12</strong><span>Solved</span></li><li class="list-group-item"><strong>80/420</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 34409</span><a href="https://www.guvi.in/code-kata-main?concept=bit%20manipulation" data-topic="bit" manipulation="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="bit manipulation" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="data structures"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">data structures</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/11</strong><span>Solved</span></li><li class="list-group-item"><strong>0/650</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 32569</span><a href="https://www.guvi.in/code-kata-main?concept=data%20structures" data-topic="data" structures="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="data structures" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Walmart"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Walmart</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/11</strong><span>Solved</span></li><li class="list-group-item"><strong>0/670</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 31159</span><a href="https://www.guvi.in/code-kata-main?concept=Walmart" data-topic="Walmart" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Walmart" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="MakeMyTrip"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">MakeMyTrip</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/10</strong><span>Solved</span></li><li class="list-group-item"><strong>0/430</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 26709</span><a href="https://www.guvi.in/code-kata-main?concept=MakeMyTrip" data-topic="MakeMyTrip" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="MakeMyTrip" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="hashing"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">hashing</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/28</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1600</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 25423</span><a href="https://www.guvi.in/code-kata-main?concept=hashing" data-topic="hashing" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="hashing" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="stack"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">stack</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/19</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1030</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 24036</span><a href="https://www.guvi.in/code-kata-main?concept=stack" data-topic="stack" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="stack" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="matrix"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">matrix</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/37</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1960</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 23926</span><a href="https://www.guvi.in/code-kata-main?concept=matrix" data-topic="matrix" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="matrix" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="trees and graphs"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">trees and graphs</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/20</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1370</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 21216</span><a href="https://www.guvi.in/code-kata-main?concept=trees%20and%20graphs" data-topic="trees" and="" graphs="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="trees and graphs" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="queue"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">queue</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/11</strong><span>Solved</span></li><li class="list-group-item"><strong>0/710</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 19764</span><a href="https://www.guvi.in/code-kata-main?concept=queue" data-topic="queue" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="queue" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="linked list"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">linked list</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/14</strong><span>Solved</span></li><li class="list-group-item"><strong>0/730</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 17972</span><a href="https://www.guvi.in/code-kata-main?concept=linked%20list" data-topic="linked" list="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="linked list" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="GU-INTRODUCTION TO OOP"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">GU-INTRODUCTION TO OOP</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/11</strong><span>Solved</span></li><li class="list-group-item"><strong>0/450</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 10263</span><a href="https://www.guvi.in/code-kata-main?concept=GU-INTRODUCTION%20TO%20OOP" data-topic="GU-INTRODUCTION" to="" oop="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="GU-INTRODUCTION TO OOP" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="dynamic programming"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">dynamic programming</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/14</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1030</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 9655</span><a href="https://www.guvi.in/code-kata-main?concept=dynamic%20programming" data-topic="dynamic" programming="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="dynamic programming" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="tries"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">tries</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/22</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1620</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 8371</span><a href="https://www.guvi.in/code-kata-main?concept=tries" data-topic="tries" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="tries" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="segment tree"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">segment tree</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/21</strong><span>Solved</span></li><li class="list-group-item"><strong>0/1470</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 7853</span><a href="https://www.guvi.in/code-kata-main?concept=segment%20tree" data-topic="segment" tree="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="segment tree" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="galgotias"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">galgotias</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/25</strong><span>Solved</span></li><li class="list-group-item"><strong>0/250</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 5315</span><a href="https://www.guvi.in/code-kata-main?concept=galgotias" data-topic="galgotias" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="galgotias" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="Advanced DS - KPR"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">Advanced DS - KPR</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/10</strong><span>Solved</span></li><li class="list-group-item"><strong>0/720</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 2336</span><a href="https://www.guvi.in/code-kata-main?concept=Advanced%20DS%20-%20KPR" data-topic="Advanced" ds="" -="" kpr="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="Advanced DS - KPR" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="KPRIET-U19CS307"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">KPRIET-U19CS307</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/14</strong><span>Solved</span></li><li class="list-group-item"><strong>0/680</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 2303</span><a href="https://www.guvi.in/code-kata-main?concept=KPRIET-U19CS307" data-topic="KPRIET-U19CS307" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="KPRIET-U19CS307" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div><div class="col-md-12 col-lg-6 col-xl-4" id="gu 28 1st semester c programming"><div class="card concept-card shadow-sm"><div class="card-header d-flex flex-row"><h2 class="concept-topic" style="text-transform: capitalize; font-size: 1.1rem; font-weight: 600; color: rgb(33, 37, 41);">gu 28 1st semester c programming</h2></div><div class="card-body"><ul class="list-group list-group-horizontal  list-group-flush card-score"><li class="list-group-item"><strong>0/60</strong><span>Solved</span></li><li class="list-group-item"><strong>0/2190</strong><span>Geekoins</span></li><li class="list-group-item"><i class="icon-award-none"></i></li></ul><div class="d-flex justify-content-between"><span class="card-text">Submissions : 900</span><a href="https://www.guvi.in/code-kata-main?concept=gu%2028%201st%20semester%20c%20programming" data-topic="gu" 28="" 1st="" semester="" c="" programming="" class="topic-button btn btn-primary">Start</a></div><div class="hover-links-wrap"><ul class="list-unstyled d-flex flex-row justify-content-end secondary-links"><li class="share-link"><a href="https://www.guvi.in/code-kata/#" id="gu 28 1st semester c programming" onclick="share_modal_ck(this.id)"><i class="fas fa-share-alt"></i><span>Share</span></a></li></ul></div></div></div></div></div>
+
+                </div>
+            </div>
+            <!-- /Body container -->
+
+        </div></div></main>
+        <div id="freeUserModal" class="modal fade" tabindex="-1" role="dialog">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-row justify-content-center mb-3">
+                            <h2 class="text-center" style="color: #212529;">Become a Premium member by purchasing our courses</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-lg-6 col-xl-5">
+                                <div class="card shadow codekata-card">
+                                   <div class="card-header basic-header d-flex justify-content-center before-card rounded-bottom">
+                                       <strong class="text-white">Free Membership</strong>
+                                   </div>
+                                   <div class="card-body">
+                                       <div class="d-flex justify-content-between">
+                                        <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">Codekata</p>
+                                          </div>
+                                          <p class="font-weight-bold">Limited Access</p>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                          <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">MicroARC</p>
+                                          </div>
+                                          <p class="font-weight-bold">Limited Access</p>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-5">
+                                <div class="card shadow codekata-card">
+                                    <div class="card-header premium-header d-flex justify-content-center after-card rounded-bottom">
+                                        <strong class="text-white">Premium Membership</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">Codekata</p>
+                                            </div>
+                                            <p class="font-weight-bold">Unlimited Access</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">MicroARC</p>
+                                          </div>
+                                          <p class="font-weight-bold">Unlimited Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center mt-3">
+                            <a id="subscriptionGoToCourses">
+                                <button type="button" class="btn btn-primary rounded-button pl-5 pr-5">Go to Courses</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="premiumPopup" tabindex="-1" role="dialog" aria-labelledby="premiumPopup" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered mx-auto" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="advisorModalTop p-3">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="text-dark" aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="pl-4 pr-4 pb-0">
+                                    <img src="./CodeKata _ GUVI_files/codekata-unlock-popup.png" class="premiumPopup-mob-img" alt="microArc">
+                                </div>
+                                <div class="p-sm-4 bg-white getcompletedacc">
+                                    <!-- <h1 class="font-weight-bold premiumPopup-header-mob">Get complete access</h1> -->
+                                    <h2 class="font-weight-bold premiumPopup-header-mob">Get complete access</h2>
+                                   <p>Buy any Premium course to get access to 1000+ questions of Codekata and Webkata</p>
+                                    <!-- <a class="btn btn-primary premiumPopup-btn" href="courses.html">Explore Courses</a> -->
+                                    <a class="btn btn-primary premiumPopup-btn" href="https://www.guvi.in/courses/">Explore Courses</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+           <script type="text/javascript" src="./CodeKata _ GUVI_files/steroid.js.download"></script>
+           <script type="text/javascript" src="./CodeKata _ GUVI_files/timer.js.download"></script>
+           <script type="text/javascript" src="./CodeKata _ GUVI_files/code-kata.js.download"></script>
+           <script type="text/javascript" src="./CodeKata _ GUVI_files/googleAnalytics.js.download"></script>
+    <script defer="" src="./CodeKata _ GUVI_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8dff7264deda7f4a&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2024.10.5&quot;,&quot;token&quot;:&quot;2f35337e9f74445394cc3c1f88e8effd&quot;}" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2421896964801907");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2421896964801907&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="" charset="">_linkedin_partner_id="1535650";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script><script type="text/javascript" id="" charset="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1535650&amp;fmt=gif">
+</noscript>
+
+<script id="" text="" charset="" type="text/javascript" src="./CodeKata _ GUVI_files/js(1)"></script>
+
+<script type="text/javascript" id="" charset="">!function(d,e,f,a,b,c){d.qp||(a=d.qp=function(){a.qp?a.qp.apply(a,arguments):a.queue.push(arguments)},a.queue=[],b=document.createElement(e),b.async=!0,b.src=f,c=document.getElementsByTagName(e)[0],c.parentNode.insertBefore(b,c))}(window,"script","https://a.quora.com/qevents.js");qp("init","15db5411c12047a0bcc9313241a7105f");qp("track","ViewContent");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/15db5411c12047a0bcc9313241a7105f/pixel?tag=ViewContent&amp;noscript=1"></noscript>
+
+<script id="" text="" charset="" type="text/javascript" src="./CodeKata _ GUVI_files/Tracker.js.download"></script><script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","3xzystyuwx");</script>
+<script type="text/javascript" id="" charset="">window._tfa=window._tfa||[];window._tfa.push({notify:"event",name:"page_view",id:1368108});!function(a,b,d,c){document.getElementById(c)||(a.async=1,a.src=d,a.id=c,b.parentNode.insertBefore(a,b))}(document.createElement("script"),document.getElementsByTagName("script")[0],"//cdn.taboola.com/libtrc/unip/1368108/tfa.js","tb_tfa_script");</script>
+<script type="text/javascript" id="" charset="">(function(e,c){if(!c.__SV){var l,h;window.mixpanel=c;c._i=[];c.init=function(q,r,f){function t(d,a){var g=a.split(".");2==g.length&&(d=d[g[0]],a=g[1]);d[a]=function(){d.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";b.people=b.people||[];b.toString=function(d){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);d||(a+=" (stub)");return a};b.people.toString=function(){return b.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)t(b,l[h]);var n="set set_once union unset remove delete".split(" ");b.get_group=function(){function d(p){a[p]=function(){call2_args=arguments;call2=[p].concat(Array.prototype.slice.call(call2_args,0));b.push([g,call2])}}for(var a={},g=["get_group"].concat(Array.prototype.slice.call(arguments,0)),m=0;m<n.length;m++)d(n[m]);return a};c._i.push([q,r,f])};c.__SV=1.2;var k=e.createElement("script");k.type="text/javascript";k.async=!0;k.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=e.getElementsByTagName("script")[0];e.parentNode.insertBefore(k,e)}})(document,window.mixpanel||[]);mixpanel.init("74656ccf168534edf5fa89bedde46fb3");var pagePath=google_tag_manager["rm"]["10719053"](48);mixpanel.track("Page Loaded",{"Page Path":pagePath});</script><script id="" text="" charset="" type="text/javascript" src="./CodeKata _ GUVI_files/smartechclient.js.download"></script><script type="text/javascript" id="" charset="">(function(c,d,f,g,e){c[e]=c[e]||[];var h=function(){var b={ti:"97009190"};b.q=c[e];c[e]=new UET(b);c[e].push("pageLoad")};var a=d.createElement(f);a.src=g;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(h(),a.onload=a.onreadystatechange=null)};d=d.getElementsByTagName(f)[0];d.parentNode.insertBefore(a,d)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><script id="" text="" charset="" type="text/javascript" src="./CodeKata _ GUVI_files/tapfiliate.js.download"></script><script type="text/javascript" id="" charset="">(function(){var a=localStorage.getItem("firstUrl");a&&""!==a||localStorage.setItem("firstUrl",window.location.href)})();</script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./CodeKata _ GUVI_files/saved_resource.html"></iframe><style>
+  #st_notification_sticky {
+            height: 70px !important;
+        }
+</style>
+<iframe allow="join-ad-interest-group" data-tagging-id="AW-741910165" data-load-time="1731172761292" height="0" width="0" src="./CodeKata _ GUVI_files/741910165.html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" id="" charset="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-741910165");gtag("config","G-NSG5GX8MNW");</script>
+<script type="text/javascript" id="" charset="">pidTracker("50223");</script>
+
+<script type="text/javascript" id="" charset="">var netRegex=RegExp("guvi.in|guvi.com|guvi.io"),isNetProd=netRegex.test(window.location.href);smartech("create","ADGMOT35CHFLVDHBJNIG50K968G3K6O6OSE83QNSKRP0KT3F0H1G");smartech("register",isNetProd?"f2627a406fb8307020a57a99429ffcea":"bebc82365233d1600e39249f0d541515");smartech("identify","");</script>
+<iframe allow="join-ad-interest-group" data-tagging-id="G-NSG5GX8MNW" data-load-time="1731172761566" height="0" width="0" src="./CodeKata _ GUVI_files/rul.html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" id="" charset="">(function(d,e,b){d.TapfiliateObject=e;d[e]=d[e]||function(){(d[e].q=d[e].q||[]).push(arguments)}})(window,"tap");tap("create","20527-acde4b",{integration:"javascript"});
+!function(d){"function"==typeof define&&define.amd?define(d):d()}(function(){function d(){try{var b,c=localStorage.getItem("refData");c&&""!==c&&(b={type:"logRefData",refData:c,url:window.location.href},e(b,"https://www.guvi.in/model/v2/affiliateReferral.php").then(function(a){a=JSON.parse(a);"success"===a.status&&a.detect}))}catch(a){console.log(a)}}var e=function(b,c){var a=new Headers,f=(a.append("Content-Type","application/x-www-form-urlencoded"),new URLSearchParams);return f.append("myData",
+JSON.stringify(b)),fetch(c,{method:"POST",headers:a,body:f}).then(function(g){return g.text()})};try{window.GUVI_REF_STATE="start",(new Promise(function(b,c){var a=(new URLSearchParams(document.location.search.substring(1))).get("ref"),f=localStorage.getItem("refData");a&&""!==a?b("newRef"):f&&""!==f?b("oldRef"):c(Error("noRef"))})).then(function(b){var c;"newRef"===b?(c={type:"generateRefData",refId:(c=new URLSearchParams(document.location.search.substring(1))).get("ref"),clickId:c.get("tm_subid1"),
+clickId2:c.get("tm_subid2"),url:window.location.href},e(c,"https://www.guvi.in/model/v2/affiliateReferral.php").then(function(a){var f;a=JSON.parse(a);"success"===a.status&&(a=a.refData,f="refData",localStorage.setItem(f,a),window.GUVI_REF_STATE="done",d(),function(g,l){var m=!(2<arguments.length&&void 0!==arguments[2])||arguments[2],n=0;return new Promise(function(h,p){var k=setInterval(function(){try{l(),clearInterval(k),h("success")}catch(q){console.log(q),g<(n+=1)&&(clearInterval(k),m?p(Error("failed")):
+h("failed"))}},1E3)})}(60,function(){if(!tap)throw Error("NOT_INITIALIZED");tap("detect")}).then(function(g){console.log(g)})["catch"](function(g){console.log(g)}))})["catch"](function(a){console.log(a)})):"oldRef"===b&&(window.GUVI_REF_STATE="done",d())})["catch"](function(b){window.GUVI_REF_STATE="done";console.log(b)})}catch(b){console.log(b)}});</script><div id="batBeacon543716806776" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon717130649916" width="0" height="0" alt="" src="./CodeKata _ GUVI_files/0" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div><script type="text/javascript" id="" charset="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","a930b123-86c9-4e18-bc14-010a433bb0cc");snaptr("track","PAGE_VIEW");</script><div id="ymPluginDivContainerInitial" style="display: block;" none"=""><button id="ymDivBar" aria-label="Dobby GUVI Assistant button" class="" style="box-shadow: transparent 0px 0px 0px !important; background: none; height: auto; width: auto; padding: 0px; display: block; border-radius: 0px;"><img style="border-radius: 0;  height: 90px;width:auto;" src="./CodeKata _ GUVI_files/jBRQYGEcJCNA1691135925739.png" alt="Dobby bot icon"><div aria-label="Agent is now online" id="ym-agent-notification-box"><span>2</span></div></button>
+ <div id="ym-auto-pop-up-container" style="bottom: calc(124px); right: 20px; align-items: flex-end; display: none;">   <button id="ym-auto-pop-up-close-button" aria-label="Close chat bubble"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="close-fill" clip-path="url(#clip0_7937_21267)">
+        <path id="closeIcon--Vector" d="M9.00005 7.93906L12.7126 4.22656L13.7731 5.28706L10.0606 8.99956L13.7731 12.7121L12.7126 13.7726L9.00005 10.0601L5.28755 13.7726L4.22705 12.7121L7.93955 8.99956L4.22705 5.28706L5.28755 4.22656L9.00005 7.93906Z" fill="#384248"></path>
+      </g>
+      <defs>
+        <clippath id="clip0_7937_21267">
+          <rect width="18" height="18" fill="white"></rect>
+        </clippath>
+      </defs>
+    </svg>   </button>
+   <div id="ym-auto-pop-up-notification">     <div id="ym-auto-pop-up-content">       <button id="ym-auto-pop-up-notification-button" class="button hide"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="notificationIcon--Vector" d="M13.6666 12.334H0.333252V11.0007H0.999919V6.35465C0.999919 3.02932 3.68659 0.333984 6.99992 0.333984C10.3133 0.333984 12.9999 3.02932 12.9999 6.35465V11.0007H13.6666V12.334ZM5.33325 13.0007H8.66659C8.66659 13.4427 8.49099 13.8666 8.17843 14.1792C7.86587 14.4917 7.44195 14.6673 6.99992 14.6673C6.55789 14.6673 6.13397 14.4917 5.82141 14.1792C5.50885 13.8666 5.33325 13.4427 5.33325 13.0007Z" fill="#747B7F"></path>
+    </svg>       </button>
+       <div id="ym-auto-pop-up-header">Dobby</div>
+     </div>
+     <div id="ym-auto-pop-up-description">Welcome! Let's make things easier.  How can I make your day better today?</div>
+   </div>
+ </div>
+<div class="ymHide  compact" id="ymDivCircle"></div>     <div class="ymHide ym-hidden" id="ym-notification"></div>     <div style="display:none" class="compact" id="ymFrameHolder">     <div class="ym-loading-spinner" style="display: none;">    <div class="ym-double-bounce1"></div>    <div class="ym-double-bounce2"></div>    </div>        <iframe style="max-height: 370px;" id="ymIframe" name="ymIframe" allowfullscreen="" frameborder="0" allowtransparency="true" scrolling="yes" allow="otp-credentials" title="chat window" src="./CodeKata _ GUVI_files/saved_resource(1).html"></iframe>     </div></div></body></html>
